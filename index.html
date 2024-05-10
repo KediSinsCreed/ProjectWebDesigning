@@ -1,167 +1,46 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang="tr">
-    <head>
-    
-    <!---------------------------------------------------------------------------------------------------------------------------------------
-    
-    italic                  ="<i> .. </i>"
-    Yazıyı eğik yazma       ="<em> .. </em>"  <--- Vurgulamak için kullanılır. 
-    Eseri eğik yazma        ="<cite> Sinekli Bakkal </cite>"
-    Kalın                   ="<b> .. </b>"
-    Kalın                   ="<strong> .. </strong>"
-    
-    -----------------------------------------------------------------------------------------------------------------------------------------
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGİN</title>
+</head>
+<link rel="stylesheet" href="styles/style.css">
 
-    sayfa başlığı           ="<title> .. </title>"
-    paragraf                ="<p>"          <--- Bitiş tagı yoktur.
-    mark (işaretleme)       ="<mark>"
-    küçük yazma             ="<small> .. </small>"
-    karakter seti           ="<meta charset="xxx??XXX>"
-    
-    -----------------------------------------------------------------------------------------------------------------------------------------
-
-    kısaltmaları belirtme   ="<abbr title= "world wide web"> www </abbr>" <--- gibi
-    Yazının üstünü çizme    ="<s> .. </s>"
-    Yazının üstünü çizme    ="<del> .. </del>"  
-    Yazının altını çizme    ="<ins> .. </ins>"
-    Yazının altını çizme    ="<u> .. </u>"  <--- Yazıların hatalı olduğunu göstermek için kullanılır.
-    
-    -----------------------------------------------------------------------------------------------------------------------------------------
-    
-    üslü sayı yazma         ="<sup> .. </sup>"
-    altlı sayı yazma        ="<sub> .. </sub>"
-    satırda boşluk bırakma  ="<br>"
-    Alıntı etiketi          ="<q> .. </q>"  <--------------------- yazının başına ve sonuna tırnak ekler.
-    Alıntı etiketi (Büyük)  ="<blockquote cite="https...com (alıntı yapılan site)"> .. </blockquote>" <----- satır atlar  paragraf başı yapar.
-    
-    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-    Başlık etiketleri 1-6   ="<h1> .. </h1>"
-    Link koyma              ="<a rell="nofollow veya follow" href="https://www.google.com.tr" target="_self veya _blank" title="Google'a gider"> google </a>" <---self bulunan sayfada blank yeni sayfada açar.
-    indirme linki koyma     ="<a href="fotoğrafım.png" download> resim linki </a>" <--- sadece gerçek web sitesinde çalışır.
-    sayfa içi gezme         ="<a href="orta"> sayfanın ortasına gitmek için dokunun </a>" (<-- <div id="orta"> ...    </div>") şeklinde bir tanım olması gerekir.
-    resim koyma             ="<img src="fotoğrafım.png" width="300" height="200" title="fotoğraf yükleniyor." 
-    ekrana gö. boyut. belir.="<img src="fotoğrafım.png" srcset="fotoğrafımx2.png 2X, ..png 3x,"  <---- tam anlamıyla bilmediğim bir kullanım için gerekli. 
-    
-    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
-    
-    (div tüm genişliği "satırı" kaplar.)     div (blog seviyesi) ="<div></div>" 
-    (kendisi kadar yer kaplar.)     span(inline seviyesi) ="<span></span>"
-    
-    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-    Listeleme;
-
-    <ul> veya <ol>     ordered list - unordered list <---- sıralı sırasız
-        <li>......</li>
-        <li>......</li>
-        <li>......</li>
-        <li>......</li>
-        <li>......</li>
-        <li>......</li>
-    </ul>, </ol>
-    
-    
-    <dl>
-        <dt>.........</dt> <--- liste elemanı
-        <dd>.........</dd> <--- onun tanımı 
-    </dl>
- 
-    
-    Listeler iç içe listelenebilir. (liste içinde liste gibi)
-    <ul type="x"> değeri değiştirilerek liste deseni değiştirilebilinir.
-    Sıralı listelerde başlangıç elemanı değişebilir <ol start="3"> gibi.
-
-
-    -----------------------------------------------------------------------------------------------
-
-    <audio controls loop muted> <source src="ahmet kaya - içimde ölen biri var.mp3" type ="audio/mpeg">  </audio> 
-    <video controls width="300" height="500" poster ="test.png"> <source src="blabla.mp4" type="video/mp4"> <track src="subtitle-tr.vtt" kind="subtitles" srclang="en" label="ingilizce"  </video> 
-
-    başka web sayfalarını kendi sayfamızda gösterme;
-    <iframe src="https://google.com" width=" " height="  "> </iframe> <---- linkleri (<a> </a>) iframe e ad verip target olarak gösterebiliriz.
-
-    -----------------------------------------------------------------------------------------------
-    form kullanıcılardan bilgi almak için kullanılır.
-       form kullanımları;
-
-    <form action="(Bilgiler nereye gönderilecekse oraya gönderilir. gönderilecek yer girilir) method="Simdilik bilmiyoruz">
-
-    </form>
-    
-    <label>()    
-    
-    <input type="select from menu"> (kullanıcının bilgi girişi yapacağı etikettir. )
-
-
-
-    -----------------------------------------------------------------------------------------------
-
-    tablo oluşturma;
-
-    <table border="1-2-3..">
-        <th>
-            Tablo başlığı oluşturmak için kullanılır.
-        </th>
-        
-        <tr>  
-            satır oluşturmak için (satır sayısını arttırır)
-        </tr>
-        <td>
-            sütun oluşturmak için(sütun sayısını arttırır)
-        </td>
-    ayrı ayrı değil iç içe kullanılırlar.  <q>practises makes perfect.</q>
-    </table>
-        
-    <thead> </thead>   kullanımları, tıpkı normal head ve body kullanımı gibi başlıkla ilgili olanlar head'e geri kalanlar body'e (içine) yazılır.
-    <tbody> </tbody>
-    <tfoot> </tfoot>  tfoot bütün maddelerin toplamını yazdığınız bir son satır işlevi görür.
-
-    colspan     kullanımları, satırları ve sütunları 1 birim yerine 2 birim tutacak şekilde (1x2 veya 2x1 şeklinde) kullanmak için yazılır.
-    rawspan     td th ve tr etiketleri içinde kullanılırlar.
-    
-    border kullanımı html 5 te yani son sürümde aslında yoktur css ile tablolar oluşturulur.
-
-    web sitesi kurulumunda w3schools.com sitesi, doğru bir site kurulumu konusunda yardımcı olacaktır.
-
-    
-    
-    
-    
-    ------>
-    <meta charset="utf-8">
-        <title>BU SİTEYE SAKIN GİRME</title>
-    
-<h1><strong><i>Bilal Nazari Company Limited </i><strong></h1>
-
-    </head>
+<body>
+  <header class="header">
+    <img src="resimler/yaprak.png" alt="YÜKLENEMEDİ" width="100" height="100">
+    <nav class="navbar">
+      <a href="web.html" >Ana Sayfa</a>
      
-    <img src="adsız.png" width="300" alt="fotograf">
-    <br><br><br>
-   <form>
-Adı:   <input type="text" value=""> <br>
-Soyadı:</input>
-<input type="text"> </input>
-<br> 
-E-mail:<input type="email"><br>
-
-<select>
+      <a href="#Login" class="active" >Login</a>
+      
+    </nav>
+  </header>
   
-    <option value="Ceng">
-    Bilgisayar mühendisliği
-  </option>
-  
-  <option value="Code">Yazılım Mühendisliği
+   
 
-  </option>
+<!--! İLETİŞİM KISMININ KODLARI-BAŞLANGIÇ-->
+<section class="contact" >
+    <form>
+      
+      <h3>GİRİŞ</h3>
+      <div class="inputBox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="kullanıcı adı"/>
+      </div>
+      <div class="inputBox">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="e-mail"/>
+      </div>
+      <div class="inputBox">
+        <i class="fas fa-password"></i>
+        <input type="password" placeholder="şifre"/>
+      </div>
+      <input type="submit" class="btn" value="GÖNDER"/>
+    </form>
+  <!--! İLETİŞİM KISMININ KODLARI-BİTİŞ-->
 
-  <option value="Machine">Makine Mühendisliği
-
-  </option>
-
-</select> 
-<input type="submit" value="Kayıt Ol"></input>
-</form>
-</html>
+  </section>
