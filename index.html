@@ -1,46 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LOGİN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Özel CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<link rel="stylesheet" href="styles/style.css">
-
 <body>
-  <header class="header">
-    <img src="resimler/yaprak.png" alt="YÜKLENEMEDİ" width="100" height="100">
-    <nav class="navbar">
-      <a href="web.html" >Ana Sayfa</a>
-     
-      <a href="#Login" class="active" >Login</a>
-      
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Memleketim</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="hakkimda.html">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sehir.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="takimimiz.html">Takımımız</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Giriş Yap</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-  </header>
-  
-   
 
-<!--! İLETİŞİM KISMININ KODLARI-BAŞLANGIÇ-->
-<section class="contact" >
-    <form>
-      
-      <h3>GİRİŞ</h3>
-      <div class="inputBox">
-        <i class="fas fa-user"></i>
-        <input type="text" placeholder="kullanıcı adı"/>
-      </div>
-      <div class="inputBox">
-        <i class="fas fa-envelope"></i>
-        <input type="email" placeholder="e-mail"/>
-      </div>
-      <div class="inputBox">
-        <i class="fas fa-password"></i>
-        <input type="password" placeholder="şifre"/>
-      </div>
-      <input type="submit" class="btn" value="GÖNDER"/>
-    </form>
-  <!--! İLETİŞİM KISMININ KODLARI-BİTİŞ-->
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Hoş Geldiniz!</h1>
+            <p class="lead">İlgilendiğiniz alana girmek için yukarıdaki menüyü kullanabilirsiniz.</p>
+            <hr class="my-4">
+            <p>İletişim için aşağıdaki butonu kullanabilirsiniz.</p>
+            <a class="btn btn-primary btn-lg" href="iletisim.html" role="button">İletişim</a>
+        </div>
+    </div>
 
-  </section>
+    <!-- Bootstrap JS ve jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
