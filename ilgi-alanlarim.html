@@ -1,0 +1,181 @@
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------
+    
+    italic                  ="<i> .. </i>"
+    Yazıyı eğik yazma       ="<em> .. </em>"  <--- Vurgulamak için kullanılır. 
+    Eseri eğik yazma        ="<cite> Sinekli Bakkal </cite>"
+    Kalın                   ="<b> .. </b>"
+    Kalın                   ="<strong> .. </strong>"
+    
+    -----------------------------------------------------------------------------------------------------------------------------------------
+
+    sayfa başlığı           ="<title> .. </title>"
+    paragraf                ="<p>"          <--- Bitiş tagı yoktur.
+    mark (işaretleme)       ="<mark>"
+    küçük yazma             ="<small> .. </small>"
+    karakter seti           ="<meta charset="xxx??XXX>"
+    
+    -----------------------------------------------------------------------------------------------------------------------------------------
+
+    kısaltmaları belirtme   ="<abbr title= "world wide web"> www </abbr>" <--- gibi
+    Yazının üstünü çizme    ="<s> .. </s>"
+    Yazının üstünü çizme    ="<del> .. </del>"  
+    Yazının altını çizme    ="<ins> .. </ins>"
+    Yazının altını çizme    ="<u> .. </u>"  <--- Yazıların hatalı olduğunu göstermek için kullanılır.
+    
+    -----------------------------------------------------------------------------------------------------------------------------------------
+    
+    üslü sayı yazma         ="<sup> .. </sup>"
+    altlı sayı yazma        ="<sub> .. </sub>"
+    satırda boşluk bırakma  ="<br>"
+    Alıntı etiketi          ="<q> .. </q>"  <--------------------- yazının başına ve sonuna tırnak ekler.
+    Alıntı etiketi (Büyük)  ="<blockquote cite="https...com (alıntı yapılan site)"> .. </blockquote>" <----- satır atlar  paragraf başı yapar.
+    
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Başlık etiketleri 1-6   ="<h1> .. </h1>"
+    Link koyma              ="<a rell="nofollow veya follow" href="https://www.google.com.tr" target="_self veya _blank" title="Google'a gider"> google </a>" <---self bulunan sayfada blank yeni sayfada açar.
+    indirme linki koyma     ="<a href="fotoğrafım.png" download> resim linki </a>" <--- sadece gerçek web sitesinde çalışır.
+    sayfa içi gezme         ="<a href="orta"> sayfanın ortasına gitmek için dokunun </a>" (<-- <div id="orta"> ...    </div>") şeklinde bir tanım olması gerekir.
+    resim koyma             ="<img src="fotoğrafım.png" width="300" height="200" title="fotoğraf yükleniyor." 
+    ekrana gö. boyut. belir.="<img src="fotoğrafım.png" srcset="fotoğrafımx2.png 2X, ..png 3x,"  <---- tam anlamıyla bilmediğim bir kullanım için gerekli. 
+    
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+    
+    (div tüm genişliği "satırı" kaplar.)     div (blog seviyesi) ="<div></div>" 
+    (kendisi kadar yer kaplar.)     span(inline seviyesi) ="<span></span>"
+    
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    Listeleme;
+
+    <ul> veya <ol>     ordered list - unordered list <---- sıralı sırasız
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+    </ul>, </ol>
+    
+    
+    <dl>
+        <dt>.........</dt> <--- liste elemanı
+        <dd>.........</dd> <--- onun tanımı 
+    </dl>
+ 
+    
+    Listeler iç içe listelenebilir. (liste içinde liste gibi)
+    <ul type="x"> değeri değiştirilerek liste deseni değiştirilebilinir.
+    Sıralı listelerde başlangıç elemanı değişebilir <ol start="3"> gibi.
+
+
+    -----------------------------------------------------------------------------------------------
+
+    <audio controls loop muted> <source src="ahmet kaya - içimde ölen biri var.mp3" type ="audio/mpeg">  </audio> 
+    <video controls width="300" height="500" poster ="test.png"> <source src="blabla.mp4" type="video/mp4"> <track src="subtitle-tr.vtt" kind="subtitles" srclang="en" label="ingilizce"  </video> 
+
+    başka web sayfalarını kendi sayfamızda gösterme;
+    <iframe src="https://google.com" width=" " height="  "> </iframe> <---- linkleri (<a> </a>) iframe e ad verip target olarak gösterebiliriz.
+
+    -----------------------------------------------------------------------------------------------
+    form kullanıcılardan bilgi almak için kullanılır.
+       form kullanımları;
+
+    <form action="(Bilgiler nereye gönderilecekse oraya gönderilir. gönderilecek yer girilir) method="Simdilik bilmiyoruz">
+
+    </form>
+    
+    <label>()    
+    
+    <input type="select from menu"> (kullanıcının bilgi girişi yapacağı etikettir. )
+
+
+
+    -----------------------------------------------------------------------------------------------
+
+    tablo oluşturma;
+
+    <table border="1-2-3..">
+        <th>
+            Tablo başlığı oluşturmak için kullanılır.
+        </th>
+        
+        <tr>  
+            satır oluşturmak için (satır sayısını arttırır)
+        </tr>
+        <td>
+            sütun oluşturmak için(sütun sayısını arttırır)
+        </td>
+    ayrı ayrı değil iç içe kullanılırlar.  <q>practises makes perfect.</q>
+    </table>
+        
+    <thead> </thead>   kullanımları, tıpkı normal head ve body kullanımı gibi başlıkla ilgili olanlar head'e geri kalanlar body'e (içine) yazılır.
+    <tbody> </tbody>
+    <tfoot> </tfoot>  tfoot bütün maddelerin toplamını yazdığınız bir son satır işlevi görür.
+
+    colspan     kullanımları, satırları ve sütunları 1 birim yerine 2 birim tutacak şekilde (1x2 veya 2x1 şeklinde) kullanmak için yazılır.
+    rawspan     td th ve tr etiketleri içinde kullanılırlar.
+    
+    border kullanımı html 5 te yani son sürümde aslında yoktur css ile tablolar oluşturulur.
+
+    web sitesi kurulumunda w3schools.com sitesi, doğru bir site kurulumu konusunda yardımcı olacaktır.
+
+    
+    
+    
+    
+    ------>
+    <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlgi Alanlarım</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Web Teknolojileri Projesi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hakkimda.html">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sehir.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Giriş Yap</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>İlgi Alanlarım</h2>
+                <p>İlgi alanlarım şunlardan oluşmaktadır; <br>Futbol<br>Voleybol<br>Bilgisayar Oyunları (Özellikle strateji türü)<br>Sohbet etmek, söyleşi veya sosyalleşmek<br>kodlama, yazılım..<br><br> Futbola olan ilgim öyle aman aman olmasa da insanın arasıra ter atması ve o tempoyla birlikte ciğerlerinin açılması insanı çok rahatlatan şeylerden birisi. Futbola olan ilgimi kıran şeyler arasında 2 Elimi aynı anda futbol oynarken kırmak ve çatlatmak olmasaydı daha çok üstünde duracağım şeylerden biri olurdu diye zannediyorum.<br><br>  Gelelim voleybola. Voleybolu lise dönemimde daha sık oynamaya başladığımı söyleyebilirim. İster öğlen aralarında, ister tenefüslerde, isterseniz de boş derslerinizde tercih edebileceğiniz bir oyun. Benim onu sevme nedenlerimden birisi de yorucu olmamasıdır, çünkü ben gerçekten normal zamanda dahi çok kolay ve çabuk terleyebilen bi insan olduğum için terlemiş olmak beni gün boyu rahatsız eder. Dolayısıyla oldukça sakin bir şekilde fiziksel aktivite yapmama olanak sağlayan bir spor türü, oyunu olduğu için hobilerim arasında.<br><br> Bilgisayar oyunlarından mevzu açmak gerekirse ben kendimi bildim bileli evimizde bilgisayar vardı, Ben küçükken fazla tercih etmiyor olsam bile ikonikleşmiş olan NFSU2, GTA SAN, ve Vice City, Farming simulator, Euro Truck Simulator, Mount and Blade ve Çeşitli oyunları oynayarak büyüdüm. Evimize internet bağlandığı vakitler o zamanın çocuklarına göre daha geçti ki bunu ben bir avantaj olarak görüyorum, Sosyal Medyayla ; Online oyunlarla çok daha geç tanışmış bir çocuktum. League of Legends ve Rekabetçi FPS oyunlarında oldukça iddialıyım (Hala Daha). İyi oynadığımı düşünüyorum ama insanın ömründen çalan şeyler başında en başta gelen oyunlar olabilirler kendileri. Ayrıca öncesinde bahsettiğim strateji ve Survival anlatıma sahip, Kendi evini, Base'ni yapıp geliştirdiğin, savunduğun türden oyunlar her zaman çok daha fazla hoşuma gitmiştir. Öyle ki ilerde nasip olursa böylesi bir oyun geliştirme düşüncem bile var. Oyun kısmı için bu kadar Muhabbet yeterli.<br><br>  
+                    Evet! gördüğünüz gibi sohbet etmek, ama bu tabii ki de herhangi birisi ile değil. Sohbet etmeyi bilen, oturduğunuzda konunun konuyu açtığı ve konuların laubali olmadığı, Sohbet ehli insanlar ile sohbet etmeyi çok severim. Bizi insan yapan biz yapan değerlerden birisi de bu gelişmiş iletişim ve anlatı becerilerimiz olsa gerek zaten.<br><br>Kodlama ve yazılım kısmı hakkında düşüncelerim başlarda da aslında hemen hemen aynı olsa dahi, verdiği özgürlük ve yönelim serbestliğinin sunduğu dünyayı hiçbir meslek sunamaz. Çünkü sen ileride istediğin herhangi bir konuda, hayalin ne olursa olsun; bunu simüle eden, veyahut bizzat uygulayan sistemler oluşturabilirsin. Bunu yalnız tek bir doğru yöntemle değil, çeşit çeşit kod kombinasyonları ve özelliklerini kullanarak çok daha dahiyane veya yaratıcı yollarla yapabilirsin. Zaten biz bunu uygulayabildiğimiz derece diğer meslektaşlarımızdan ayrılıp daha bütün meslektaşlarımın ve benim de istediğimiz mevkilere kavuşabiliriz. Sadece Mezun olmak ve Dersi geçmek amaçlı yapılan ödevler, projeler ve okul tarafından verilmeyen, mesleğimiz üzereyken yaptığımız projeler ; inanın bize hiçbir şey katmaz. Katmayacak da.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
