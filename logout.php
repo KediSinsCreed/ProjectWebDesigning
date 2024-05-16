@@ -1,12 +1,12 @@
 <?php
-// Oturumu başlat
+
 session_start();
 
-// Oturumu sonlandır
-$_SESSION = array(); // Tüm oturum değişkenlerini temizle
-session_destroy(); // Oturumu sonlandır
 
-// Kullanıcıyı giriş sayfasına yönlendir
+$_SESSION = array();
+session_destroy(); 
+
+
 header("location: login.php");
 exit;
 ?>
