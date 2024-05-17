@@ -59,20 +59,26 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <div class="col-md-6">
             <div class="content">
             <h2>Tuz Gölü</h2>
-          
-            </div>
+          <p>Tuz Gölü , Cihanbeyli'ye geldiğinizde görmek isteyeceğiniz şeylerde en başta gelebilecek güzelliklerden biridir. Tuz Gölü, Dünya'nın en büyük tuz, Türkiye'nin ise Van Gölü'nden sonraki en  büyük gölüdür. Flamingoları ile ünlüdür.</p>
+        <p>Tuz Gölü'nde Temmuz-Ekim, havaların durumuna göre Kasım ayına kadar tuz çıkarma sezonu olur. Tuzu parçalayarak Kamyonların kasalarına atan bu iş için özel yapılmış makinalar vasıtası ile tuz çıkartılır. Genellikle hafriyat tipi kamyonlar kullanılır. Tuz Kamyonlar gibi makineler için hayati riske sahiptir bu yüzden düzenli olarak oldukça detaylı bir biçimde her türlü aksanını yıkamanız gerekir, aksi takdirde demir aksamlar paslanır; çürür ve kullanılamaz hale gelir. </p>   
+        <p>Tuz Gölü, tıpkı bir çölde deneyimleyebileceğiniz şekilde birsürü parçalara ayrılmış taneciklerin bulunmasından ötürü gündüzleri çok sıcak, geceleri ise dayanılmaz derecede soğuk olabilir. Abim ve Babam da Nakliyeci, Tır kamyon şoförleri oldukları için her yaz sezonunda Tuz Gölü'nde çalışırlar. Bazen vardiyalı bir şekilde, bazense tuz gölü dışında olan herhangi bir iş fırsatından ötürü tek vardiya çalışmaktadırlar.</p>
+        <p>Büyük ihtimalle biliyorsunuz ama değinmeden olmaz tabii ki. Tuz Gölü, flamingolar ile ünlü bir göldür. Flamingolar burayı oldukça çok tercih eder, senenin belli dönemlerinde sürü halinde buraya gelirler. Ayrıca eşsiz bir manzarası vardır, Beyaz renkli ve su içerisinde olması onun içindeyken ışıktan bir hüzmenin içindeymişsiniz hissiyatı verir. </p> 
+        <p>Tuz gölü ve etrafında, belirli bir yarıçapta maalesef ki çoğu bitki türü yaşayamamakta, tuzun bozduğu ph değerleri canlıları öldürmekte veyahut yaşamalarına engel olmaktadır. Ayrıca iç anadolunun oldukça kurak bir iklime sahip olması da cabası.</p>    
+    </div>
         </div>
         <div class="col-md-6">
             <div class="image">
               
-                <br><br><p>Kırmızı ile gösterilen alan Cihanbeyli,Sol tarafta mavi ile gösterilen Beyşehir Gölü, Sağ üstteki mavi ile gösterilen yer Tuz Gölü'dür.</p>
+                <br><br><p>Tuz Gölü'ne ait manzara fotoğrafları
+                </p>
                 
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Konya_location_Cihanbeyli.PNG" alt="Şehir Resmi" width="444">
+                <img src="tuzgölü2" alt="tuzgölü Resmi" width="444">
                 <p></p>
                 
-                <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2019/03/21/thumbs_b_c_f2cc3af242cf609d4eeb533e7a557032.jpg" alt="Şehir Resmi"width="444" >
+                <img src="https://isbh.tmgrup.com.tr/sbh/2021/10/01/650x344/turkiyenin-tuz-ihtiyacinin-yuzde-60ini-karsilayan-1633080643918.jpg" alt="tuzgölü tuz çıkarma"width="444" >
                 <p></p>
-                <img src="adsız.png" alt="yegenlertarla" width="444">
+                <img src="tuzgölü" alt="tuzgölü resmi" width="444">
+                <p></p>
             </div>
         </div>
     </div>

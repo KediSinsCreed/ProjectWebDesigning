@@ -61,7 +61,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             
             İletişim için;
 </p>
-            <a class="btn btn-primary btn-lg" href="iletisim.html" role="button">İletişim</a>
+            <a class="btn btn-primary btn-lg" href="iletisim.php" role="button">İletişim</a>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
