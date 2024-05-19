@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     
     if (empty($name) || empty($email) || empty($subject) || empty($message)) {
-        echo "Lütfen tüm alanları doldurun.";
+        echo "tüm alanlar doldurulmalıdır.";
         exit;
     }
 

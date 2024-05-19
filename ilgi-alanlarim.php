@@ -74,21 +74,55 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         </div>
         <div class="col-md-6">
             <div class="image">
-             
-                <br><br><p>Sırasıyla görseller.</p>
-                
-                <img id="oyunfoto1" src="https://e1.pxfuel.com/desktop-wallpaper/897/633/desktop-wallpaper-nfs-underground-2-350z-nissan-350z-aesthetic-ps4.jpg" alt="NFSU Resmi" width="444">
-                <p></p>
-                <img id="oyunfoto2" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1546990/ss_df005e43791b1be1d3949b1e4ef3cafb29b6850a.1920x1080.jpg?t=1676922450" alt="vice city" width="424">
-                <p></p>
-                <img id="oyunfoto3" src="https://teachyourkidscode.com/wp-content/uploads/2022/02/best-coding-language-for-games.jpg" alt="kod foto" width="444">
-                <p></p>
-                <img src="icardi.WEBP" width="444">
-                <p></p>
-                
+            <div class="slider">
+    <div class="slides">
+    <img src="https://e1.pxfuel.com/desktop-wallpaper/897/633/desktop-wallpaper-nfs-underground-2-350z-nissan-350z-aesthetic-ps4.jpg" width="444" height="274">
+    <img src="icardi.webp" width="444" height="274">
+    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1546990/ss_df005e43791b1be1d3949b1e4ef3cafb29b6850a.1920x1080.jpg?t=1676922450" width="444" height="274">
+    <img src="https://teachyourkidscode.com/wp-content/uploads/2022/02/best-coding-language-for-games.jpg" width="444" height="274">            
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+<div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
             </div>
         </div>
     </div>
 </div>
 
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function moveSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        const slides = document.getElementsByClassName("slides")[0];
+        const dots = document.getElementsByClassName("dot");
+        if (n > slides.children.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.children.length }
+        for (i = 0; i < slides.children.length; i++) {
+            slides.children[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides.children[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</body>
     </html>
